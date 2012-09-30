@@ -1,7 +1,7 @@
 <div class="about_title">ABOUT</div>
 <div class="about_text">
 <div id="about_photo"> </div>
-I'm David Simkin, a software application developer who designs applications for various platforms, including Android. I believe in making products that offer easy functionality and great design that make tasks simpler for users. I'm always looking for new challenges and opportunities to work on interesting projects.
+I'm David Simkin, graduate software developer at the BBC who in my own time designs applications for various platforms, including Android. I believe in making products that offer easy functionality and great design that make tasks simpler for users. I'm always looking for new challenges and opportunities to work on interesting projects.
 </div>
 <div id="tech" class="about_sub_title">TECHNOLOGIES</div>
 <div class="about_text">
@@ -9,7 +9,7 @@ I'm David Simkin, a software application developer who designs applications for 
 <li>Java - written for both desktop PCs and Android devices.</li>
 <li>Android - Extensive knowledge of the Android OS and SDK, including experience with writing applications for tablets.</li>
 <li>XHTML, PHP, Javascript and other web technologies.</li>
-<li>JQuery.</li>
+<li>Python and Ruby.</li>
 <li>Native C++ code processing real-time images.</li>
 <li>Utilising advertising networks such as Admob, Adwhirl and Aduru.</li>
 </ul>
@@ -17,8 +17,9 @@ I'm David Simkin, a software application developer who designs applications for 
 <div class="about_sub_title">EXPERIENCE (<a href="./static/other/cv.pdf">CV</a>)</div>
 <div class="about_text">
 <ul>
+<li>September 2012 - Present: Graduate Developer (BBC Future Media)
+<li>2009 - 2012: BSc Computing Science (Newcastle University).</li>
 <li>June 2011 - October 2011: Full-time Research Assistant.</li>
-<li>2009 - Present: BSc Computing Science (Newcastle University).</li>
 <li>2007 - 2008: John Lewis - Customer Service Representative.</li>
 </ul>
 </div>
