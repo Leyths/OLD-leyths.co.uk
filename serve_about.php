@@ -1,9 +1,7 @@
-<?php
-echo '
 <div class="about_title">ABOUT</div>
 <div class="about_text">
 <div id="about_photo"> </div>
-I\'m David Simkin, a software application developer who designs applications for various platforms, including Android. I believe in making products that offer easy functionality and great design that make tasks simpler for users. I\'m always looking for new challenges and opportunities to work on interesting projects.
+I'm David Simkin, a software application developer who designs applications for various platforms, including Android. I believe in making products that offer easy functionality and great design that make tasks simpler for users. I'm always looking for new challenges and opportunities to work on interesting projects.
 </div>
 <div id="tech" class="about_sub_title">TECHNOLOGIES</div>
 <div class="about_text">
@@ -40,4 +38,3 @@ I\'m David Simkin, a software application developer who designs applications for
 <li><a href="https://market.android.com/details?id=com.leyths.live_wallpaper_free">Orbital Live Wallpaper</a></li>
 </ul>
 <br/></div>';
-?>

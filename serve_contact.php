@@ -1,5 +1,3 @@
-<?php
-echo '
 <div class="about_title">CONTACT</div>
 <div class="about_text">
 Have questions? Contact me for more information. You can get in touch using the form below or directly at <a href="mailto:l.eyths@gmail.com">l.eyths@gmail.com</a>.
@@ -24,6 +22,3 @@ Have questions? Contact me for more information. You can get in touch using the 
 				<input type="submit" value="Send" class="submit" /> 
 			</form> 
 		</div> 
-
-';
-?>

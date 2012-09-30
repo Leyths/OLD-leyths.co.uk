@@ -1,6 +1,3 @@
-<?php
-echo '
-
 <img src="/static/images/rr_logo2.png"\><br\>
 
 <div id="img_lightbox">
@@ -33,7 +30,7 @@ echo '
 
 <script type="text/javascript">
 $(function() {
-	$(\'a.lightbox\').lightBox({imageLoading: "/static/images/lightbox/lightbox-ico-loading.gif",
+	$('a.lightbox').lightBox({imageLoading: "/static/images/lightbox/lightbox-ico-loading.gif",
 	imageBtnClose: "/static/images/lightbox/lightbox-btn-close.gif",
 	imageBtnNext: "/static/images/lightbox/lightbox-btn-next.gif",
 	imageBtnPrev: "/static/images/lightbox/lightbox-btn-prev.gif"}); // Select all links with lightbox class
@@ -49,5 +46,3 @@ $("#feedback").click(function () {
 
 $("#changelog").colorbox();
 </script>
-';
-?>
