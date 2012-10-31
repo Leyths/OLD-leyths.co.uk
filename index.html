@@ -6,235 +6,53 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=1;" />
 <title>Leyths - Home</title>
-<link rel="stylesheet" type="text/css" href="static/styles/style.css" />
-<link rel="stylesheet" type="text/css" href="static/styles/colorbox.css" />
-<link rel="stylesheet" type="text/css" href="static/styles/jquery.lightbox-0.5.css" media="screen" />
 
-<!--[if !IE 7]>
-	<style type="text/css">
-		#wrap {display:block;height:100%}
-		
-	</style>
-<![endif]-->
+<link rel="stylesheet" type="text/css" href="static/css/style.css" media="screen" />
+<link href='http://fonts.googleapis.com/css?family=Questrial|Arvo' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" media="screen" />
 
-<!--[if !IE]>
-	<style type="text/css">
-		.button{filter: dropshadow(color=#bdb7bd, offx=1, offy=0);}
-		.about_sub_title{filter: dropshadow(color=#bdb7bd, offx=1, offy=0);}
-		.about_title{filter: dropshadow(color=#bdb7bd, offx=1, offy=0);}
-	</style>
-<![endif]-->
-
-<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
-<script src="/static/scripts/jquery.js" type="text/javascript"></script>
-<script src="/static/scripts/jquery.history.js" type="text/javascript"></script>
-<script src="/static/scripts/jquery.colorbox-min.js" type="text/javascript"></script>
-<script type="text/javascript" src="static/scripts/jquery.lightbox-0.5.pack.js"></script>
-<script type="text/javascript">
-  window.___gcfg = {lang: 'en-GB'};
-
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-  
-  $(document).ready(function($){
-
-		$.history.init(function(hash){
-			if(hash == "") {
-				showHome();
-			} else {
-				if(hash=="reddita")
-				{
-					showReddita();
-				} else if(hash=="about")
-				{
-					showAbout();
-				} else if(hash=="contact")
-				{
-					showContact();
-				}
-			}
-		},
-		{ unescape: ",/" });
-	});
-</script>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-25920315-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+<script src="" type="text/javascript"></script>
 
 </head>
 <body>
-<div id="wrap">
-	<div id="main">
-		<div id="header">
-			<span id="back_button"><img alt="Home" src="/static/images/backMobile.png"/> <span id="back_button_text">HOME</span></span>
-			<div id="contact_float">Contact me</div>
-			<span id="header_float">
-				<div class="g-plusone"></div>
-				<a href="https://twitter.com/Leyths" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#00AEFF" data-show-count="false">Follow @Leyths</a>
-			</span>
-			<span id="header_float_market">
-				<a href="https://market.android.com/developer?pub=David+Simkin" id="market_apps"><img alt="Android Market" id="market_head_img" src="/static/images/android.png"/> <span class="market_button">My Apps</span></a>
-			</span>
-		</div>
-		<div id="index_main_div">
-			<img src="/static/images/logo1.png" alt="Leyths"/>
-			<div id="button_container">
-				<div id="reddita_button" class="button">
-					<img style='background: transparent;-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */      zoom: 1;' alt="Reddita" src="/static/images/reddita.png" height="200px" width="200px"/>
-					<div>Reddita</div>
-					<div class="info_desc">The top 15 selling Reddit reader.</div>
-				</div>
-				<div id="about_button" class="button">
-					<img alt="About" src="/static/images/about.png" height="225px" width="225px" style="position:relative; bottom:10px; padding-left:10px;"/>
-					<div style="position:relative; bottom:24px;">About</div>
-					<div style="position:relative; bottom:20px;" class="info_desc">Who I am and what I do.</div>
-				</div>
-				<div id="blog_button" class="button">
-					<img alt="Blog" src="/static/images/blog.png" height="225px" width="225px" style="position:relative; bottom:10px;"/>
-					<div style="position:relative; bottom:24px;">Blog</div>
-					<div style="position:relative; bottom:20px;" class="info_desc">Words, ramblings and thoughts.</div>
-				</div>
-			</div>
-		</div>
-		<div id="reddita_main_div"></div>
-		<div id="about_main_div"></div>
-		<div id="contact_main_div"></div>
-	</div>
-</div>
-<div id="footer">
-	<div id="copyright">&copy; 2012 David Simkin - <a href="javascript:showContact()">Contact</a></div>
-</div>
-<script type="text/javascript"> 
 
-		$("#reddita_button").click(function () {
-			showReddita();
-		});
-		
-		$("#about_button").click(function () {
-			showAbout();
-		});
-		
-		$("#blog_button").click(function () {
-			window.location.href="http://www.leyths.co.uk/blog/" ;
-		});
-		
-		function showReddita()
-		{
-			$("#index_main_div").fadeOut("slow", function(){
-				if($("#reddita_main_div").html()=="")
-				{
-					xmlhttp=new XMLHttpRequest();
-					xmlhttp.open("GET", "./serve_reddita.php", false);
-					xmlhttp.send();
-					var text=xmlhttp.responseText;
-					$("#reddita_main_div").html(text);
-				}
-				$("#reddita_main_div").fadeIn("slow");
-				$("#back_button").fadeIn("slow");
-				jQuery.history.load("reddita");
-				_gaq.push(['_trackPageview', '/#reddita']);
-			});
-		}
-		
-		function showAbout()
-		{
-			$("#index_main_div").fadeOut("slow", function(){
-				if($("#about_main_div").html()=="")
-				{
-					xmlhttp=new XMLHttpRequest();
-					xmlhttp.open("GET", "./serve_about.php", false);
-					xmlhttp.send();
-					var text=xmlhttp.responseText;
-					$("#about_main_div").html(text);
-				}
-				$("#about_main_div").fadeIn("slow");
-				$("#back_button").fadeIn("slow");
-				jQuery.history.load("about");
-				_gaq.push(['_trackPageview', '/#about']);
-			});
-		}
-		
-		$("#back_button").click(function () {
-			showHome();
-		});
+    <div class="navbar navbar-fixed-top header">
+      <div class="navbar-inner">
+        <ul class="nav">
+          <li class="active"><a href="#">Me</a></li>
+          <li><a href="#">Reddita</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
 
-		function showHome()
-		{
-			if($("#reddita_main_div").is(":visible"))
-			{
-				$("#reddita_main_div").fadeOut("slow", function(){
-					$("#index_main_div").fadeIn("slow");
-					$("#back_button").fadeOut("slow");
-				});
-			} else if($("#about_main_div").is(":visible"))
-			{
-				$("#about_main_div").fadeOut("slow", function(){
-					$("#index_main_div").fadeIn("slow");
-					$("#back_button").fadeOut("slow");
-				});
-			} else if($("#contact_main_div").is(":visible"))
-			{
-				$("#contact_main_div").fadeOut("slow", function(){
-					$("#index_main_div").fadeIn("slow");
-					$("#back_button").fadeOut("slow");
-				});
-			}
-			jQuery.history.load("");
-		}
-		
-		$("#contact_float").click(function () { showContact(); });
-		
-		function showContact()
-		{
-			if($("#reddita_main_div").is(":visible"))
-			{
-				$("#reddita_main_div").fadeOut("slow", function(){
-					loadContact();
-				});
-			} else if($("#about_main_div").is(":visible"))
-			{
-				$("#about_main_div").fadeOut("slow", function(){
-					loadContact();
-				});
-			} else if($("#index_main_div").is(":visible"))
-			{
-				$("#index_main_div").fadeOut("slow", function(){
-					loadContact();
-				});
-			}
-		}
-		
-		function loadContact()
-		{
-			if($("#contact_main_div").html()=="")
-				{
-					xmlhttp=new XMLHttpRequest();
-					xmlhttp.open("GET", "./serve_contact.php", false);
-					xmlhttp.send();
-					var text=xmlhttp.responseText;
-					$("#contact_main_div").html(text);
-				}
-				$("#contact_main_div").fadeIn("slow");
-				$("#back_button").fadeIn("slow");
-				jQuery.history.load("contact");
-				_gaq.push(['_trackPageview', '/#contact']);
-		}
-</script>
-
-
+    <div id="main">
+        <div class="light text-block">
+            <div class="content">
+                <span class="heading">I'm David Simkin,</span>
+                graduate software developer at the <img class="logo" src="/static/img/BBC.png" alt="BBC"/>, currently working on the <img class="logo" src="/static/img/iplayer.png" alt="iPlayer"/>.
+            </div>
+        </div>
+        <div class="dark text-block">
+            <div class="content">
+                I started at the BBC in September of 2012 and my scheme consists of four 6 month rotations around different products and areas of the BBC's Future Media division. 
+            </div>
+        </div>
+        <div class="light text-block">
+            <div class="content">
+                Previously I've worked at <img class="logo" src="/static/img/newcuni.png" alt="Newcastle University"/> as a research assistant and it's where I studied and attained my degree.
+            </div>
+        </div>
+        <div class="dark text-block">
+            <div class="content">
+                I achieved a  <span class="sub-heading">first-class honors</span> degree in Computing Science and my time as a research assistant consisted of leading a team in designing and building an Android application in partnership with the <img class="logo" src="/static/img/NHS.jpg" alt="NHS"/>  for the rehabilitation of children with neurological disorders.
+            </div>
+        </div>
+        <div class="light text-block">
+            <div class="content">
+                And finally here is some more text to make a point
+            </div>
+        </div>
+    </div>
 </body>
 </html> 
