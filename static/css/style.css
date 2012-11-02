@@ -49,6 +49,26 @@ table {
 
 /* End Reset */
 
+html, body {
+    height: 100%;
+}
+
+.main-container {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#main {
+    background-color: #e6e6e6;
+    padding-top: 40px;
+    min-height: 100%;
+    padding-bottom: 30px;
+}
+
 html .navbar-inner {
     background-image: none;
     background-color: #3F4C6B;
@@ -59,16 +79,25 @@ html .navbar .header {
     
 }
 
+html .navbar .nav {
+    float: none;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 html .navbar .nav > .active > a,
 html .navbar .nav > .active > a:hover {
     color: white;
     background: url(../img/nav-primary-active.png) no-repeat center 34px;
     background-color: transparent;
+    text-transform: uppercase;
 }
 
 html .navbar .nav > li > a {
     color: white;
     text-shadow: none;
+    text-transform: uppercase;
 }
 
 html .navbar .nav > li > a:hover {
@@ -102,6 +131,10 @@ html .navbar .nav > li > a:hover {
     margin-right: 5px;
 }
 
+.logo.reddita {
+    margin-left: 0;
+}
+
 
 .content {
     padding-left: 10px;
@@ -115,12 +148,8 @@ html .navbar .nav > li > a:hover {
     font-size: 1.6em;
 }
 
-#main {
-    padding-top: 50px;
-}
-
-.light {
-
+.light .sub-heading{
+    font-size: 1.5em;
 }
 
 .dark {
@@ -133,4 +162,10 @@ html .navbar .nav > li > a:hover {
     max-width: 700px;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+#footer {
+    font-size: 0.7em;
+    text-align: center;
+    padding-top: 10px;
 }
