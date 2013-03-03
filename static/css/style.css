@@ -143,9 +143,10 @@ html .navbar .nav > li > a:hover {
 
 .logo {
     width: auto;
-    height: 30px;
+    height: 20px;
     margin-left: 5px;
     margin-right: 5px;
+    margin-bottom: 4px;
 }
 
 .logo.reddita {
