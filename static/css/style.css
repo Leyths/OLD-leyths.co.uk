@@ -137,6 +137,11 @@ html .navbar .nav > li > a:hover {
     margin-left: 0;
 }
 
+.break{
+    display: block;
+    height: 12px;
+}
+
 
 .content {
     padding-left: 10px;
