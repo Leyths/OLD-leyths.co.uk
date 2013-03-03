@@ -19,11 +19,21 @@
 
 }
 
+.sidepanel {
+    background-color: #e3e3e3;
+    margin: 0 8px 0 8px;
+    padding: 8px;
+}
+
 @media (max-width: 767px) {
     .row-fluid [class*="span"] div,
     .row-fluid [class*="span"] span {
         margin-left: 8px;
         margin-right: 8px;
+    }
+
+    .sidepanel {
+        margin-top: 20px;
     }
 }
 
@@ -44,14 +54,12 @@ body {
     min-height: 100%;
 }
 
-.sidepanel {
-    background-color: #e3e3e3;
-    margin: 0 8px 0 8px;
-    padding: 8px;
-}
-
 .sidepanel span {
     display: block;
+}
+
+.sidepanel span a {
+    color: black;
 }
 
 .sidepanel span:first-child {
