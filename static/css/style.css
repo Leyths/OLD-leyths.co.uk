@@ -1,72 +1,74 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 /* End Reset */
 
-html, body {
-    height: 100%;
+@media (min-width: 981px) {
+    body {
+        padding-top: 50px;
+    }
+
+    #main {
+        max-width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar {
+        max-width: 932px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .row-fluid [class*="span"] div,
+    .row-fluid [class*="span"] span {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+.container-fluid {
+    background-color: white;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .main-container {
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
 
-#main {
+body {
     background-color: #e6e6e6;
+    min-height: 100%;
+}
+
+.sidepanel {
+    background-color: #e3e3e3;
+    margin: 0 8px 0 8px;
+    padding: 8px;
+}
+
+.sidepanel span {
+    display: block;
+}
+
+.sidepanel span:first-child {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+.content-main {
     padding-top: 40px;
     min-height: 100%;
     padding-bottom: 30px;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-left: 16px;
 }
 
 html .navbar-inner {
